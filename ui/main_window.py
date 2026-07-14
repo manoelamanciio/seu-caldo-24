@@ -15,6 +15,8 @@ from ui.modules.financeiro import FinanceiroWidget
 from ui.modules.pdv import PdvWidget
 from ui.modules.relatorios import RelatoriosWidget
 
+from ui.modules.administracao import AdministracaoWidget
+
 
 class MainWindow(QMainWindow):
     def __init__(self, usuario_logado):
@@ -63,6 +65,7 @@ class MainWindow(QMainWindow):
             ("💰  Financeiro", FinanceiroWidget),
             ("🧾  PDV / Atendimento", PdvWidget),
             ("📑  Relatórios", RelatoriosWidget),
+            ("⚙️  Administração", AdministracaoWidget),
         ]
 
         for i, (nome, classe) in enumerate(modulos):
